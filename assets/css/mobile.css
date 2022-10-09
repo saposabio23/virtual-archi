@@ -1,0 +1,67 @@
+@media screen and (max-width: 982px) {
+
+  .info {
+    position: relative;
+    width: 100%;
+    height: auto
+    padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) var(--spacing-m);
+  }
+
+  .projects {
+    position: relative;
+    width: 100%;
+    padding: var(--spacing-m) var(--spacing-m);
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .copy1 {
+    display: none;
+  }
+
+  .copy2 {
+    display: block;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .videos {
+    grid-template-columns: auto;
+  }
+
+  .parcours {
+    grid-template-columns: auto;
+  }
+
+  .images {
+    grid-template-columns: auto auto;
+  }
+
+  img {
+    height: auto;
+  }
+
+  .imgbackFull {
+    padding: var(--spacing-s);
+    display: flex;
+    align-items: center;
+  }
+
+
+
+  }
+
+  @media screen and (max-width: 500px) {
+  }
+
+  @media screen and (max-width: 350px) {
+
+}
