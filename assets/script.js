@@ -33,33 +33,68 @@
 //   }
 // }
 
-var $img1= document.querySelector('#img1');
-var $img2= document.querySelector('#img2');
-var $img3= document.querySelector('#img3');
-var $img4= document.querySelector('#img4');
 
-function clickToFullImage1 (){
-  $img1.classList.toggle("imgbackFull")
-  $img1.classList.toggle("imglPlus")
+// /* -----------------------------------
+// SECTIONS
+// -------------------------------------- */
+
+var $close1 = document.querySelector('#close1');
+var $close2 = document.querySelector('#close2');
+var $close3 = document.querySelector('#close3');
+var $videoCard = document.querySelector('#videoCard');
+var $videoSection = document.querySelector('#videoSection');
+var $parcoursCard = document.querySelector('#parcoursCard');
+var $parcoursSection = document.querySelector('#parcoursSection');
+var $imagesCard = document.querySelector('#imagesCard');
+var $imagesSection = document.querySelector('#imagesSection');
+
+function closeVideo() {
+  $videoSection.classList.add("hidden");
+  $parcoursSection.classList.add("hidden");
+  $imagesSection.classList.add("hidden");
+}
+$close1.addEventListener('click', closeVideo);
+
+function openVideo() {
+  $videoSection.classList.remove("hidden");
+}
+$videoCard.addEventListener('click', openVideo);
+
+
+
+function closeParcours() {
+  $videoSection.classList.add("hidden");
+  $parcoursSection.classList.add("hidden");
+  $imagesSection.classList.add("hidden");
+}
+$close2.addEventListener('click', closeParcours);
+
+function openParcours() {
+  $parcoursSection.classList.remove("hidden");
+}
+$parcoursCard.addEventListener('click', openParcours);
+
+
+
+
+function closeImages() {
+  $videoSection.classList.add("hidden");
+  $parcoursSection.classList.add("hidden");
+  $imagesSection.classList.add("hidden");
 
 }
-$img1.addEventListener('click', clickToFullImage1)
+$close3.addEventListener('click', closeImages);
 
-
-function clickToFullImage2 (){
-  $img2.classList.toggle("imgbackFull")
+function openImages() {
+  $imagesSection.classList.remove("hidden");
 }
-$img2.addEventListener('click', clickToFullImage2)
+$imagesCard.addEventListener('click', openImages);
 
 
-function clickToFullImage3 (){
-  $img3.classList.toggle("imgbackFull")
-}
-$img3.addEventListener('click', clickToFullImage3)
-
-
-function clickToFullImage4 (){
-  $img4.classList.toggle("imgbackFull")
-}
-$img4.addEventListener('click', clickToFullImage4)
-
+window.onkeydown = function( event ) {
+  if ( event.keyCode == 27 ) {
+    $videoSection.classList.add("hidden");
+    $parcoursSection.classList.add("hidden");
+    $imagesSection.classList.add("hidden");
+  }
+};
