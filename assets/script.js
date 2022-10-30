@@ -15,23 +15,26 @@
 
 
 // /* -----------------------------------
-// TITLE ON SCROLL
+// SCROLLERS
 // -------------------------------------- */
-// window.onscroll = function() {
-//   scrollTitle()
-// };
 
-// function scrollTitle() {
-//   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-//     $h1.classList.add("mejorsize1")
-//     $h2.classList.add("mejorsize2")
-//     $title.classList.add("mejorsizetitle")
-//   } else {
-//     $h1.classList.remove("mejorsize1")
-//     $h2.classList.remove("mejorsize2")
-//     $title.classList.remove("mejorsizetitle")
-//   }
-// }
+var $close0 = document.querySelector('#close0');
+
+function close0() {
+  document.querySelector('.contenu2').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+$close0.addEventListener('click', close0);
+
+var $top = document.querySelector('#top');
+
+function toTop() {
+  window.scrollTo(0, 0);({
+    behavior: 'smooth'
+  });
+}
+$top.addEventListener('click', toTop);
 
 
 // /* -----------------------------------
@@ -85,6 +88,15 @@ $close5.addEventListener('click', close1);
 $close6.addEventListener('click', close1);
 $close7.addEventListener('click', close1);
 
+$section1.addEventListener('click', close1);
+$section2.addEventListener('click', close1);
+$section3.addEventListener('click', close1);
+$section4.addEventListener('click', close1);
+$section5.addEventListener('click', close1);
+$section6.addEventListener('click', close1);
+$section7.addEventListener('click', close1);
+
+
 function open1() {
   $section1.classList.remove("hidden");
 }
@@ -120,8 +132,6 @@ function open7() {
 }
 $card7.addEventListener('click', open7);
 
-
-
 window.onkeydown = function( event ) {
   if ( event.keyCode == 27 ) {
     $section1.classList.add("hidden");
@@ -132,4 +142,6 @@ window.onkeydown = function( event ) {
     $section6.classList.add("hidden");
     $section7.classList.add("hidden");
   }
-};
+}
+
+
