@@ -41,60 +41,95 @@
 var $close1 = document.querySelector('#close1');
 var $close2 = document.querySelector('#close2');
 var $close3 = document.querySelector('#close3');
-var $videoCard = document.querySelector('#videoCard');
-var $videoSection = document.querySelector('#videoSection');
-var $parcoursCard = document.querySelector('#parcoursCard');
-var $parcoursSection = document.querySelector('#parcoursSection');
-var $imagesCard = document.querySelector('#imagesCard');
-var $imagesSection = document.querySelector('#imagesSection');
+var $close4 = document.querySelector('#close4');
+var $close5 = document.querySelector('#close5');
+var $close6 = document.querySelector('#close6');
+var $close7 = document.querySelector('#close7');
 
-function closeVideo() {
-  $videoSection.classList.add("hidden");
-  $parcoursSection.classList.add("hidden");
-  $imagesSection.classList.add("hidden");
+var $card1 = document.querySelector('#card1');
+var $section1 = document.querySelector('#section1');
+
+var $card2 = document.querySelector('#card2');
+var $section2 = document.querySelector('#section2');
+
+var $card3 = document.querySelector('#card3');
+var $section3 = document.querySelector('#section3');
+
+var $card4 = document.querySelector('#card4');
+var $section4 = document.querySelector('#section4');
+
+var $card5 = document.querySelector('#card5');
+var $section5 = document.querySelector('#section5');
+
+var $card6 = document.querySelector('#card6');
+var $section6 = document.querySelector('#section6');
+
+var $card7 = document.querySelector('#card7');
+var $section7 = document.querySelector('#section7');
+
+
+function close1() {
+  $section1.classList.add("hidden");
+  $section2.classList.add("hidden");
+  $section3.classList.add("hidden");
+  $section4.classList.add("hidden");
+  $section5.classList.add("hidden");
+  $section6.classList.add("hidden");
+  $section7.classList.add("hidden");
 }
-$close1.addEventListener('click', closeVideo);
+$close1.addEventListener('click', close1);
+$close2.addEventListener('click', close1);
+$close3.addEventListener('click', close1);
+$close4.addEventListener('click', close1);
+$close5.addEventListener('click', close1);
+$close6.addEventListener('click', close1);
+$close7.addEventListener('click', close1);
 
-function openVideo() {
-  $videoSection.classList.remove("hidden");
+function open1() {
+  $section1.classList.remove("hidden");
 }
-$videoCard.addEventListener('click', openVideo);
+$card1.addEventListener('click', open1);
 
-
-
-function closeParcours() {
-  $videoSection.classList.add("hidden");
-  $parcoursSection.classList.add("hidden");
-  $imagesSection.classList.add("hidden");
+function open2() {
+  $section2.classList.remove("hidden");
 }
-$close2.addEventListener('click', closeParcours);
+$card2.addEventListener('click', open2);
 
-function openParcours() {
-  $parcoursSection.classList.remove("hidden");
+function open3() {
+  $section3.classList.remove("hidden");
 }
-$parcoursCard.addEventListener('click', openParcours);
+$card3.addEventListener('click', open3);
 
-
-
-
-function closeImages() {
-  $videoSection.classList.add("hidden");
-  $parcoursSection.classList.add("hidden");
-  $imagesSection.classList.add("hidden");
-
+function open4() {
+  $section4.classList.remove("hidden");
 }
-$close3.addEventListener('click', closeImages);
+$card4.addEventListener('click', open4);
 
-function openImages() {
-  $imagesSection.classList.remove("hidden");
+function open5() {
+  $section5.classList.remove("hidden");
 }
-$imagesCard.addEventListener('click', openImages);
+$card5.addEventListener('click', open5);
+
+function open6() {
+  $section6.classList.remove("hidden");
+}
+$card6.addEventListener('click', open6);
+
+function open7() {
+  $section7.classList.remove("hidden");
+}
+$card7.addEventListener('click', open7);
+
 
 
 window.onkeydown = function( event ) {
   if ( event.keyCode == 27 ) {
-    $videoSection.classList.add("hidden");
-    $parcoursSection.classList.add("hidden");
-    $imagesSection.classList.add("hidden");
+    $section1.classList.add("hidden");
+    $section2.classList.add("hidden");
+    $section3.classList.add("hidden");
+    $section4.classList.add("hidden");
+    $section5.classList.add("hidden");
+    $section6.classList.add("hidden");
+    $section7.classList.add("hidden");
   }
 };
