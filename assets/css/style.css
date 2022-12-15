@@ -1,12 +1,3 @@
-@font-face {
-  font-family: "ambitregular";
-  src: url("../fonts/ambit-regular-webfont.woff2") format("woff2"),
-    url("../fonts/ambit-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap
-}
-
 :root {
   --font-std: 1.3rem;
   --font-little: 1rem;
@@ -38,7 +29,7 @@ p {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  font-family: "ambitregular", sans-serif;
+  font-family: sans-serif;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
