@@ -1,0 +1,74 @@
+
+
+@media screen and (max-width: 650px) {
+
+h1{
+ line-height: 1.2;
+}
+
+.header {
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  display: grid;
+  justify-content: inherit;
+  font-size: var(--font-little);
+  left: inherit;
+  transform: none;
+  top: 0;
+  padding: var(--spacing-m) var(--spacing-m) var(--spacing-m) var(--spacing-m);
+  height: auto;
+  row-gap: var(--spacing-m);
+  border-bottom: 2px dotted;
+}
+
+.header p {
+  font-size: 1rem;
+}
+
+.contact > a {
+  margin-right: var(--spacing-s);
+  margin-left: 0;
+}
+
+.contenu {
+  max-width: 100vw;
+  display: block;
+  margin: 0;
+  height: auto;
+  padding-top: var(--spacing-s);
+  padding: var(--spacing-l) var(--spacing-m) var(--spacing-m) var(--spacing-m);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--spacing-m);
+  height: auto;
+  padding: var(--spacing-m);
+}
+
+.card {
+  height: 200px;
+}
+
+
+.iframe {
+  margin-bottom: var(--spacing-m);
+}
+
+.gauche {
+  border-right: none;
+}
+
+.center-contact {
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+.close {
+  margin: var(--spacing-l) auto var(--spacing-s) auto;
+}
+
+
+}
