@@ -130,7 +130,7 @@ h3{
 .contenu{
   max-width: 74rem;
   margin: auto;
-  padding: var(--spacing-s) var(--spacing-l) var(--spacing-s) var(--spacing-l);
+  padding: var(--spacing-l) var(--spacing-l) var(--spacing-s) var(--spacing-l);
 }
 
 .center {
@@ -369,6 +369,6 @@ iframe {
   max-width: 200px;
   border: 1px solid #FDF7CC;}
 
-.line{
+  #line{
   display: none;
 }

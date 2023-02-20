@@ -9,7 +9,7 @@
   .header {
     width: 100vw;
     max-width: 100vw;
-    position: sticky;
+    position: relative;
     display: grid;
     justify-content: inherit;
     font-size: var(--font-little);
@@ -36,7 +36,7 @@
     display: block;
     margin: 0;
     height: auto;
-    padding: var(--spacing-xl) var(--spacing-m) var(--spacing-m) var(--spacing-m);
+    padding: var(--spacing-l) var(--spacing-m) var(--spacing-m) var(--spacing-m);
   }
   
   .cards {
@@ -45,7 +45,7 @@
     grid-gap: var(--spacing-m);
     height: auto;
     padding: var(--spacing-m);
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-m);
   }
   
   .card {
@@ -70,10 +70,11 @@
   .center-contact {
     grid-template-columns: 1fr;
     gap: 0;
+    margin-bottom: var(--spacing-l);
   }
 
   .center-apropos{
-    gap: var(--spacing-l);
+    gap: var(--spacing-m);
   }
   
   
@@ -81,24 +82,12 @@
     margin: var(--spacing-l) auto var(--spacing-s) auto;
   }
   
-  .line{
-    background-color: var(--color-primary);
-    display: block;
-    width: 100%;
-    transform: rotate(-4deg) translateY(-15px);
-    height: fit-content;
-    z-index: 1;
-    position: fixed;
-    padding: var(--spacing-l) var(--spacing-m) 0 var(--spacing-m);
-  }
 
   #line{
+    display: block;
+    transform: rotate(-4deg);
     width: 100%;
     filter: invert(96%) sepia(79%) saturate(321%) hue-rotate(358deg) brightness(108%) contrast(98%);
-    bottom: 0;
-    position: absolute;
-    padding: var(--spacing-m) var(--spacing-m) 0 var(--spacing-m);
-    left: 0;
   }
   
   }
