@@ -16,7 +16,7 @@
     left: inherit;
     transform: none;
     top: 0;
-    padding: var(--spacing-m) var(--spacing-m) 0 var(--spacing-m);
+    padding: var(--spacing-m);
     height: auto;
     row-gap: var(--spacing-m);
     z-index: 2;
@@ -36,7 +36,7 @@
     display: block;
     margin: 0;
     height: auto;
-    padding: var(--spacing-l) var(--spacing-m) var(--spacing-m) var(--spacing-m);
+    padding: 0 var(--spacing-m) var(--spacing-m) var(--spacing-m);
   }
   
   .cards {
@@ -45,7 +45,6 @@
     grid-gap: var(--spacing-m);
     height: auto;
     padding: var(--spacing-m);
-    margin-top: var(--spacing-m);
   }
   
   .card {
@@ -70,7 +69,7 @@
   .center-contact {
     grid-template-columns: 1fr;
     gap: 0;
-    margin-bottom: var(--spacing-l);
+    margin: var(--spacing-l) 0;
   }
 
   .center-apropos{
@@ -84,10 +83,10 @@
   
 
   #line{
-    display: block;
-    transform: rotate(-4deg);
+    display: inline;
     width: 100%;
     filter: invert(96%) sepia(79%) saturate(321%) hue-rotate(358deg) brightness(108%) contrast(98%);
+    position: relative;
   }
   
   }
