@@ -15,7 +15,8 @@
   --highlight: rgba(0, 0, 0, .20);
   --highlight-hover: rgba(0, 0, 0, .05);
 
-  --color-primary: #484F3A;
+  --color-primary: saddlebrown;
+  --color-text: #FDF7CC;
   
   --transition-short: all .3s ease-in-out;
   --transition-long: all .6s ease-in-out;
@@ -69,7 +70,7 @@ body{
   font-family: 'rubikregular';
   line-height: 1.4;
   overflow-x: hidden;
-  color: #FDF7CC;
+  color: var(--color-text);
 }
 
 /*/////////////// HOME /////////////////*/
@@ -93,7 +94,7 @@ body{
   padding: 15px 15px 12px 15px;
   transition: var(--transition-short);
   background-color: var(--highlight);
-  border: 1px solid #FDF7CC;
+  border: 1px solid var(--color-text);;
 }
 
 .contact > a:hover {
@@ -367,7 +368,8 @@ iframe {
 .center-apropos img{
   border-radius: 50%;
   max-width: 200px;
-  border: 1px solid #FDF7CC;}
+  border: 1px solid var(--color-text);
+}
 
   #line{
   display: none;
