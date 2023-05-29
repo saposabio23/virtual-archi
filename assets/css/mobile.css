@@ -76,6 +76,9 @@
     gap: var(--spacing-m);
   }
   
+  .descrip {
+    max-width: 100%;
+  }
   
   .close {
     margin: var(--spacing-l) auto var(--spacing-s) auto;
